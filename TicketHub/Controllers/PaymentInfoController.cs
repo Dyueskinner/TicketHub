@@ -15,6 +15,12 @@ namespace TicketHub.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok("Welcome to my api");
+        }
+
         [HttpPost]
         public IActionResult Post([FromBody]paymentInfo paymentInfo)
         {
@@ -23,7 +29,7 @@ namespace TicketHub.Controllers
                 return BadRequest("Invalid details.");
             }
 
-            return Ok("Hello from controller");
+            return Ok(paymentInfo);
 
         }
     }
