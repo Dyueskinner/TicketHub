@@ -23,7 +23,8 @@ namespace TicketHub.Controllers
                 return BadRequest("Invalid details.");
             }
 
-            return Ok(paymentInfo);
+            return Ok("Hello from controller");
+
         }
     }
 
