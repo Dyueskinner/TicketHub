@@ -2,7 +2,7 @@
 
 namespace TicketHub.Properties
 {
-    public class paymentInfo
+    public class PaymentInfo
     {
         public int ConcertId { get; set; }
 

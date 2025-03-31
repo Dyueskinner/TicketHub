@@ -15,14 +15,14 @@ namespace TicketHub.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
+        [HttpGet("")]
         public IActionResult Get()
         {
             return Ok("Welcome to my api");
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody]paymentInfo paymentInfo)
+        public IActionResult Post([FromBody]PaymentInfo paymentInfo)
         {
             if (!ModelState.IsValid)
             {
